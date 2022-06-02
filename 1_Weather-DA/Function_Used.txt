@@ -1,0 +1,64 @@
+Function used from pandas library:-
+
+    -> nunique() & unique()
+        1)
+        2) DataFram.nunique()
+            It shows the total no. of unique values in each column.
+            It can be applied on a single columns well as on whole dataframe.
+            
+            
+    -> count()
+        It shows the total no. of non-null values in each column.
+        It can be applied on a single columns well as on whole dataframe.
+        
+        
+    -> value_counts()
+        In a column, it shows all the unique values with their count.
+        It can be applied on a single column only.
+        
+    -> Filtering
+    
+    
+    -> groupby
+        DataFrame.groupby('Col_Name') --> Refer to the column
+        cannot be use alone
+        use it with getgroup()
+        
+        
+    -> get_group()
+        DataFrame.groupby('Col_Name').get_group('Element_Name')
+        Will give all the record which have 'Element_Name' as value in the column name as 'Col_Name'
+        
+        
+    -> isnull() & notnull()
+        Check for null data is present or not
+    
+    
+    -> rename()
+        DataFrame.rename(columns = {'old_col_name' : 'new_col_name'})
+        
+        
+    -> mean()
+    -> std()
+    -> var()
+    -> min() & max()
+    
+    
+    -> str.contains
+        w_data['Weather Condition'].str.contains('Snow')
+        Give the output as boolean
+        It will search for key word as 'Snow' in the Weather condition column
+        All the terms with 'Snow' will get extracted
+        Examples --> Snow, Snow Showers, Snow Fog, .......
+        Now to get the data frame from above boolean result:-
+            w_data[w_data['Weather Condition'].str.contains('Snow')]
+            
+            
+    -> And (&) Operator
+        Condition_1 & Condtion_2
+        Will give the output as True When both conditions are True
+        
+        
+    -> Or (|) Operator
+        Condition_1 | Condtion_2
+        Will give the output as True When any one of the conditions is True

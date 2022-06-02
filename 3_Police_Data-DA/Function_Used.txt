@@ -1,0 +1,34 @@
+1) Drop function:-
+    df.drop( index = row_number, columns = 'column_name')
+    will give the copy of dataframe, will not replace it
+    To replace it we need to follow
+        M1 --> df.drop( index = row_number, columns = 'column_name', inplace = True)
+        M2 --> df = df.drop( index = row_number, columns = 'column_name')
+        
+    
+    
+
+
+2) Mapping function:-
+    df['col_name'].map( { old_value : new_value } )                                    <---- If only one value need to be mapped
+    df['col_name'].map( { old_value_1 : new_value_1, old_value_2 : new_value_2 } )     <---- If more than one values need to be mapped
+    
+    will give the copy of column, will not replace it
+    To replace it we need to follow
+        df['col_name'] = df['col_name'].map( { old_value : new_value } )
+        
+    Example:-
+        police['stop_duration'].map( {'0-15 Min' : 7.5, '16-30 Min' : 23, '30+ Min' : 45} )
+            Taking stop_duration from police dataframe
+            Now mapping the values in column stop_duration as
+                '0-15 Min' with 7.5
+                '16-30 Min' with 23
+                '30+ Min' with 45
+                
+                
+                
+
+3) Describe function:-
+    Gives the description of the columns or dataframe
+    df['col_name'].describe()
+    Will give the output that contain mean, count, std, min, max, ........

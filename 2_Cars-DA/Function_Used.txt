@@ -1,0 +1,27 @@
+1) car.dropna()
+
+    Removes all the null entry records from dataset
+    Give the copy of datafram with no Null records present
+    To make permanent to the dataFrame work 
+        car = car.dropna()
+
+
+
+
+2) car['Origin'].isin(['Asia', 'Europe'])
+
+    From the column = Origin it will check for the 'Asia' or 'Europe'
+    If any one is present then it will give true
+    The result from above will be in boolean form
+    To get the result as dataFrame
+        car[(car['Origin'] == 'Asia') | (car['Origin'] == 'Europe')]
+        
+        
+        
+        
+3) car['MPG_City'] = car['MPG_City'].apply(lambda x:x+3)
+
+    From the column = MPG_City
+    Using apply function
+    apply function uses the lambda method --> (which is used in excel)
+    update the new column as => New_Column = Old_column + 3
