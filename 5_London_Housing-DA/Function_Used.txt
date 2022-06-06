@@ -1,0 +1,45 @@
+1) pd.to_datetime(date_column)
+        Convert the date_column from object datatype to dateTime data type
+        
+        
+
+2) data_Frame['col_name'].dt.year
+    Assuming the col_name is the dateTime data type column
+    Selecting that column from the data_Frame
+    .dt.year will give only the year
+    Example:-
+        If date ==> 28/11/2000
+        Then    ==> 2000 will be output
+        
+        
+        
+2) data_Frame['col_name'].dt.month
+    Assuming the col_name is the dateTime data type column
+    Selecting that column from the data_Frame
+    .dt.month will give only the month
+    Example:-
+        If date ==> 28/11/2000
+        Then    ==> 11 will be output
+        
+
+
+
+3) Insert function
+    Syntax:-
+        DataFrame.insert(index, 'New_Col_name', 'New_Col_Values')
+        
+    DataFrame = Name of the Dataframe
+    index = index number i.e. the column number where to insert 
+        index = 0 => means column number = 1
+    
+    
+    
+    
+4) drop function
+    Syntax:-
+        data.drop(['Month', 'Year'], axis = 1, inplace = True)
+        
+    ['', ''] ==> Column names
+    axis = 0 ==> means rows axis
+    axis = 1 ==> means Column axis
+    inplace = True will make change to the dataFrame
