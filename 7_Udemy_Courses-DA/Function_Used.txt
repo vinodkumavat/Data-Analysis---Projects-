@@ -1,0 +1,8 @@
+1) String function
+    df['col_name'].str.contains('key_to_search')
+    
+    select the column in which we need to find
+    Now passing the the value we need to find the column ==> 'key_to_search'
+    Will give the boolean result
+    To get the df
+        df[df['col_name'].str.contains('key_to_search')]

@@ -1,0 +1,36 @@
+1) Style function
+    A) df.style.hide_index()
+            to hide the index printed when we print the dataframe
+            Gives the copy of dataframe
+    
+    
+    
+    B) df.style.set_caption('Caption/heading name')
+            To set the caption of heading name to the dataframe
+            Gives the copy of dataframe
+            
+            
+            
+2) Set index
+    dF = dF.set_index('Col_name')
+    It will set the Col_name column as the index of the dataframe
+    It will just give the copy of data frame that is why are assigning it to the dF to make changes permanent
+    
+    
+    
+3) Add suffix
+    data.add_suffix('_Vinod')
+    add '_Vinod' to each column name after old one
+    Example => Old Col Name = 'Population' 
+               New Col Name = 'Population_Vinod' 
+    Gives the copy of dataframe
+               
+               
+    
+4) Add Prefix
+    data.add_prefix('_Kuma')
+    add '_Kuma' to each column name before old one
+    Example => Old Col Name = 'Population' 
+               New Col Name = '_KumaPopulation'
+    Gives the copy of dataframe
+    
