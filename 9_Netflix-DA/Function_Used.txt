@@ -1,0 +1,24 @@
+1) duplicate()
+    Give the boolean result of data where the record is duplicate
+    To get the dataframe type of data which is duplicate
+        dF[dF.duplicated()]
+        
+
+
+2) data.drop_duplicates()
+    Will delete the duplicate records from the dataframe
+    will return the copy of dataframe which is free from duplicate records
+    To make the changes permanent
+        data.drop_duplicates(inplace = True)
+
+
+
+
+3) str.split('**', expand = True)
+    ** = needs to substitute the character about which we need to split the string
+    
+
+
+5) countplot()
+    It is part of seaborn library
+    syntax => sns.countplot(dF['col_name'])
